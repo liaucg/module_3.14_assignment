@@ -272,3 +272,5 @@ scan-dependencies:
       run: npm audit
 ```
 
+# Step 11: Push changes to GitHub to start the workflow
+Commit changes locally and push it to GitHub. Navigate the repo on GitHub, click on the **Actions** tab to see the workflows.

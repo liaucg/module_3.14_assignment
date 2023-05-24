@@ -263,4 +263,12 @@ Commit changes locally and push it to GitHub. Navigate the repo on GitHub, click
 ![image](https://github.com/liaucg/module_3.14_assignment/assets/22501900/40bb09b5-f9cd-4ce7-882c-bd56b13fb879)
 
 ## Step 11: Add a new job **scan-dependencies** in .github/workflows/main.yml to scan for package vulnerability with *npm audit* command.
+```yml
+scan-dependencies:
+  runs-on: ubuntu-latest
+  needs: install-dependencies
+  steps:
+    - name: Run Scan Dependencies Commands
+      run: npm audit
+```
 

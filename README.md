@@ -259,6 +259,8 @@ The last step added will print the value of *LIAU_SECRET_2*
 
 ## Step 10: Push changes to GitHub to start the workflow
 Commit changes locally and push it to GitHub. Navigate the repo on GitHub, click on the **Actions** tab to see the workflows.
-![image](https://github.com/liaucg/module_3.13_assignment/assets/22501900/5668c788-2522-4210-a988-f2f4f9950c9e)
-![image](https://github.com/liaucg/module_3.13_assignment/assets/22501900/54a2122b-56ae-4724-aab0-95a78913c61a)
+![image](https://github.com/liaucg/module_3.14_assignment/assets/22501900/d7cf0e9f-9b28-4751-bb9a-0f28d641de12)
+![image](https://github.com/liaucg/module_3.14_assignment/assets/22501900/40bb09b5-f9cd-4ce7-882c-bd56b13fb879)
+
+## Step 11: Add a new job **scan-dependencies** in .github/workflows/main.yml to scan for package vulnerability with *npm audit* command.
 

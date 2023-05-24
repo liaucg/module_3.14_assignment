@@ -5,7 +5,7 @@
 The objective of this assignment is to set up a continuous integration and continuous deployment (CI/CD) pipeline for a Node.js application that is deployed on a serverless platform with Package Vulnerability Scan in placed!.
 
 ## Step 1: Create a code repository in GitHub
-![image](https://github.com/liaucg/module_3.13_assignment/assets/22501900/dfdb2e8a-2501-4f1d-8465-5e3af6346e6b)
+![image](https://github.com/liaucg/module_3.14_assignment/assets/22501900/3564226b-5580-4e78-99b6-b3b92d2c3a46)
 
 ## Step 2: Clone the code repository into local machine
 ```
@@ -13,7 +13,7 @@ $ git clone git@github.com:liaucg/module_3.14_assignment.git
 ```
 
 ## Step 3: Create index.js file
-![image](https://github.com/liaucg/module_3.13_assignment/assets/22501900/764d448d-e10e-4bbb-a96b-0910d0662e3f)
+![image](https://github.com/liaucg/module_3.14_assignment/assets/22501900/d70cd8b2-0e71-4dba-8658-3345f7d1126d)
 
 [index.js](index.js)
 ```js
@@ -33,7 +33,7 @@ module.exports.handler = async (event) => {
 ```
 
 ## Step 4: Create serverless.yml
-![image](https://github.com/liaucg/module_3.13_assignment/assets/22501900/76b53264-b9b9-4d6e-85ae-44ddf43df4a5)
+![image](https://github.com/liaucg/module_3.14_assignment/assets/22501900/05449a83-64bc-4250-96a8-2987156a1005)
 
 [serverless.yml](serverless.yml)
 ```yml
@@ -70,18 +70,20 @@ $ serverless deploy
 
 Following is the output from deploy command:
 ```
-Deploying liau-module-3-13-assignment to stage dev (ap-southeast-1)
+Running "serverless" from node_modules
 
-✔ Service deployed to stack liau-module-3-13-assignment-dev (126s)
+Deploying liau-module-3-14-assignment to stage dev (ap-southeast-1)
 
-endpoint: GET - https://krmtbssdk2.execute-api.ap-southeast-1.amazonaws.com/
+✔ Service deployed to stack liau-module-3-14-assignment-dev (119s)
+
+endpoint: GET - https://a9jq2b1243.execute-api.ap-southeast-1.amazonaws.com/
 functions:
-  api: liau-module-3-13-assignment-dev-api (53 MB)
+  api: liau-module-3-14-assignment-dev-api (53 MB)
 ```
 
 After succesful deployment the created serverless application can be invoked with curl command:
 ```
-curl https://krmtbssdk2.execute-api.ap-southeast-1.amazonaws.com/
+curl https://a9jq2b1243.execute-api.ap-southeast-1.amazonaws.com/
 ```
 
 which resulted in the following response:
@@ -96,18 +98,18 @@ which resulted in the following response:
     "headers": {
       "accept": "*/*",
       "content-length": "0",
-      "host": "krmtbssdk2.execute-api.ap-southeast-1.amazonaws.com",
+      "host": "a9jq2b1243.execute-api.ap-southeast-1.amazonaws.com",
       "user-agent": "curl/7.81.0",
-      "x-amzn-trace-id": "Root=1-646cb550-5e22d9da198d4da330c22e75",
+      "x-amzn-trace-id": "Root=1-646e3131-7c33a9d472537f212918c69f",
       "x-forwarded-for": "118.200.182.45",
       "x-forwarded-port": "443",
       "x-forwarded-proto": "https"
     },
     "requestContext": {
       "accountId": "255945442255",
-      "apiId": "krmtbssdk2",
-      "domainName": "krmtbssdk2.execute-api.ap-southeast-1.amazonaws.com",
-      "domainPrefix": "krmtbssdk2",
+      "apiId": "a9jq2b1243",
+      "domainName": "a9jq2b1243.execute-api.ap-southeast-1.amazonaws.com",
+      "domainPrefix": "a9jq2b1243",
       "http": {
         "method": "GET",
         "path": "/",
@@ -115,11 +117,11 @@ which resulted in the following response:
         "sourceIp": "118.200.182.45",
         "userAgent": "curl/7.81.0"
       },
-      "requestId": "FYFErjfKSQ0EMZA=",
+      "requestId": "FbyfvhUUSQ0EMxg=",
       "routeKey": "GET /",
       "stage": "$default",
-      "time": "23/May/2023:12:45:04 +0000",
-      "timeEpoch": 1684845904885
+      "time": "24/May/2023:15:45:53 +0000",
+      "timeEpoch": 1684943153292
     },
     "isBase64Encoded": false
   }
@@ -128,7 +130,7 @@ which resulted in the following response:
 
 ## Step 6: Create CI/CD pipeline with GitHub Actions
 Create main.yml in .github/workflows folder
-![image](https://github.com/liaucg/module_3.13_assignment/assets/22501900/d5676618-178c-483d-a8d5-959758950744)
+![image](https://github.com/liaucg/module_3.14_assignment/assets/22501900/91c791bb-b7aa-42fc-8e10-54a1378c094b)
 
 [main.yml](.github/workflows/main.yml)
 ```yml

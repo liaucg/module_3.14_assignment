@@ -26,12 +26,14 @@ jobs:
     runs-on: ubuntu-latest
     needs: install-dependencies
     steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
       - name: Run Scan Dependencies Commands
         run: npm audit
 
   retrieve-secret:
     runs-on: ubuntu-latest
-    needs: install-dependencies
+    needs: scan-dependencies
     steps:
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1

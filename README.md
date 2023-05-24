@@ -274,3 +274,7 @@ scan-dependencies:
 
 # Step 11: Push changes to GitHub to start the workflow
 Commit changes locally and push it to GitHub. Navigate the repo on GitHub, click on the **Actions** tab to see the workflows.
+![image](https://github.com/liaucg/module_3.14_assignment/assets/22501900/7e821111-0f34-4c2a-a307-2dbc6c0909ec)
+![image](https://github.com/liaucg/module_3.14_assignment/assets/22501900/b5b2a94e-e1b5-4d5f-ad3a-68ecc50135b8)
+
+
